@@ -1,1 +1,89 @@
+/* assets/style.css â€” Custom Streamlit styling */
 
+/* Hide default Streamlit branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* App background */
+.stApp {
+    background-color: #f8fafc;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);
+    color: white;
+}
+
+section[data-testid="stSidebar"] .stMarkdown,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] p {
+    color: #e0e7ff !important;
+}
+
+section[data-testid="stSidebar"] .stSelectbox label {
+    color: #c7d2fe !important;
+}
+
+/* Metric cards */
+div[data-testid="stMetric"] {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 28px !important;
+    font-weight: 700;
+    color: #1e1b4b;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.stButton > button[kind="primary"] {
+    background: #4f46e5;
+    border: none;
+    color: white;
+}
+
+.stButton > button[kind="primary"]:hover {
+    background: #4338ca;
+    box-shadow: 0 4px 12px rgba(79,70,229,0.4);
+}
+
+/* Expanders */
+.streamlit-expanderHeader {
+    background: white !important;
+    border-radius: 8px !important;
+    font-weight: 500;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab"] {
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #4f46e5 !important;
+    border-bottom-color: #4f46e5 !important;
+}
+
+/* Dataframe */
+.stDataFrame {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+/* Success/Error/Info boxes */
+.stSuccess, .stInfo, .stWarning, .stError {
+    border-radius: 8px;
+}
